@@ -1,0 +1,8 @@
+{
+	"name":"Dairy",
+	"main":"dairy.html",
+	"window":{
+		"width":"100",
+		"height":"100"
+	}
+}

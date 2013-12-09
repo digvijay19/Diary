@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Dairy</title>
+	<link rel="stylesheet" type="text/css" href="./public/stylesheets/style.css">
+	<script type="text/javascript" src="./scriptmain.js">
+	</script>
+</head>
+<body onload="loadDiary();">
+	<div class="options">
+		<h1 >My Dairy</h1>
+		<input id="search" placeholder="search"></input>
+		<input id="gotoDate" placeholder="Go To Date"></input>
+	</div>
+	<div class="main" >
+		<button onClick = "previousDay();"><</button>
+		<div class="page" id="page1">
+			<textarea id="date"></textarea>
+			<label for="location">Location</label>
+			<textarea id="location"></textarea>
+			<label for="topic">Topic</label>
+			<textarea id="topic"></textarea>
+			<label for="story">Story</label>
+			<textarea id="story"></textarea>
+		</div>
+		<div class="page" id="page2">
+			<button onclick="previousImage();"><</button>
+			<div>
+				<img id="imageCanvas" src="./public/images/1.jpg" width="200" height="200">
+			</div>
+			<button onclick="nextImage();">></button>
+			<div>
+				<!-- <video width="200" height="180" controls>
+					<source src="./public/videos/The last lecture.mp4" type="video/mp4">
+					This App does not Support This video Extension
+				</video> -->
+			</div>
+		</div>
+		<button onClick = "nextDay();">></button>
+		<button onClick = "saveDetails();">Save</button>
+		<button onClick = "Edit();">Edit</button>
+	</div>
+</body>
+</html>
